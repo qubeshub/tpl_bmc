@@ -126,13 +126,6 @@ jQuery(document).ready(function(jq) {
 		}
 		scrollTop = windowTop;
 
-		// Adjust placement of navigation bar if branding bar is showing
-		if (scrollingDown && !$brandingBar.hasClass('brand-out')) {
-			$menuWrap.css('top', 0)
-		} else if (!scrollingDown && $brandingBar.hasClass('brand-out')) {
-			$menuWrap.css('top', 44 + 'px')
-		}
-
 		// Negative padding on $menuWrap is a headache!
 		// Fix sidebar directly under menu after announcements
 		if ($scontainer.length) {
