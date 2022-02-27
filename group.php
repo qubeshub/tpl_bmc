@@ -134,7 +134,7 @@ $membership_control = $params->get('membership_control', 1);
 								<jdoc:include type="modules" name="minidash" />
 
 								<li id="account-logout">
-									<a href="<?php echo Route::url('index.php?option=com_users&view=logout'); ?>"><span class="nav-icon-logout"><?php echo file_get_contents(PATH_CORE . DS . "assets/icons/signout.svg") ?></span><span><?php echo Lang::txt('TPL_SYSTEM_LOGOUT'); ?></span></a>
+									<a href="<?php echo Route::url('index.php?option=com_users&view=logout&return=' . base64_encode($return)); ?>"><span><?php echo Lang::txt('TPL_SYSTEM_LOGOUT'); ?></span></a>
 								</li>
 							
 							</ul>
